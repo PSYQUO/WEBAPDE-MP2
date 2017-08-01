@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Reaf - a Japanese stereotypical pronunciation of leaf. That is all. -->
+		<meta charset="ISO-8859-1">
+		<title>Reaf.</title>
+		<script src="resources/js/jquery-3.2.1.js"></script>
+		<script src="resources/js/helperscript.js"></script>
+		<script src="resources/js/photos.js"></script>
+        
+		<link href="resources/css/mainstyle.css" type="text/css" rel="stylesheet"></link>
+		<link href="resources/css/photos.css" type="text/css" rel="stylesheet"></link>
+
+		<script src="resources/js/index.js"></script>
+		<link href="resources/css/index.css" type="text/css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<div class="topbar">
+			<div id="name">
+				<img style="margin-right: 10px;" src="resources/assets/leaf.png"></img>
+				Reaf.
+			</div>
+			<div id="search-div">
+				<input id="search-bar" type="search"></input>
+			</div>
+			<div>
+				<button id="account-button">Sign-up/Login</button>	
+			</div>
+		</div>
+		<div class="content">
+			<div id="photo-grid">
+			</div>
+		</div>
+		<div class="popup">
+            <div id="popup-account">
+				<button id="account-close"><img src="resources/assets/cancel.png"/></button>
+				<br>
+				<div id="account-loginform">
+					<span id="account-label">Login to Reaf.</span>
+					<div action="Login" method="POST">
+						<div id="account-items">
+							Username
+							<br>
+							<input size="40" name="username" type="text"/>
+						</div>
+						<div id="account-items">
+							Password
+							<br>
+							<input size="40" name="password" type="password"/>
+						</div>
+						<div id="account-items">
+							<span style="font-size: 14px;">Remember me?</span>
+							<input type="checkbox" name="remember" value="remember" checked/>
+						</div>
+						<div id="account-items">
+							<span id="account-toregister">Create an Account</span>
+							<input id="account-login" type="submit" value="Login"/>
+						</div>
+					</div>
+				</div>
+				<div id="account-registerform">
+					<span id="account-label">Sign-up for Reaf.</span>
+					<div action="Register" method="POST">
+						<div id="account-items">
+							Username
+							<br>
+							<input size="40" name="username" type="text"/>
+						</div>
+						<div id="account-items">
+							Password
+							<br>
+							<input size="40" name="password" type="password"/>
+						</div>
+						<div id="account-items">
+							Description
+							<br>
+							<textarea name="description" rows="3" cols="45"></textarea>
+						</div>
+						<div id="account-items">
+							<span id="account-tologin">Login to Account</span>
+							<input id="account-register" type="submit" value="Register"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="popup-photo">
+				<div id="photo-view">
+				</div>
+				<div id="photo-info">
+					<div id="info-pic">
+						<button id="photo-close"><img src="resources/assets/cancel.png"/></button>
+						<div id="photo-title">Photo from the Internet</div>
+						<div id="photo-desc">A nice photo from the internet.</div>
+					</div>
+					<div id="info-user">
+						<span id="photo-user"><img style="margin-right: 9px;" src="resources/assets/avatar.png"/>admin</span>
+						<div id="photo-tags">
+							<img style="margin-right: 4px;" src="resources/assets/tag.png"/>
+							<span id="tag-item">meme?</span>
+							<span id="tag-item">internet</span>
+							<span id="tag-item">something</span>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+	</body>
+</html>

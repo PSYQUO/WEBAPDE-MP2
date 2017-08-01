@@ -1,0 +1,74 @@
+#account-button
+{
+    margin-left: 8vw;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#popup-account
+{
+    display: none;
+    margin: 10vh 0 auto 0; 
+    background-color: white; 
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#account-registerform
+{
+    display: none;
+}
+
+#account-label
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#account-close
+{
+    float: right;
+}
+
+#account-items
+{
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+}
+
+#account-login, #account-register
+{
+    float: right;
+    background-color: #DCEDC8;
+    font-size: 16px;
+}
+
+#account-login:hover, #account-register:hover
+{
+    background-color: #AED581;
+}
+
+#account-tologin, #account-toregister
+{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#account-tologin:hover, #account-toregister:hover
+{
+    color: #2196F3;
+    cursor: pointer;
+}
+
+textarea[name="description"]
+{
+    resize: none;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#account-error
+{
+    margin-top: 10px;
+    color: #F44336;
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+body
+{
+    cursor: default;
+    display: flex; 
+    flex-direction: column;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+input, button
+{
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+input[type="text"], input[type="password"]
+{
+    background-color: white;
+    border-color: #212121;
+    border-width: 0 0 1px 0;
+    font-size: 16px;
+}
+
+button, input[type="submit"]
+{
+    background-color: white;
+    border-radius: 5px;
+    padding: 6px;
+    border: none;
+    font-size: 14px;
+    transition-duration: 100ms;
+}
+
+button:hover
+{
+    background-color: #F5F5F5;
+}
+
+input:focus, button:focus, textarea:focus
+{
+    outline: none;
+}
+
+img
+{
+    vertical-align: text-top;
+}
+
+.topbar
+{
+    align-items: center;
+    box-shadow: 0 0 10px 1px #33691E;
+    display: flex;
+    height: 4vh;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    transition-duration: 100ms;
+}
+
+#name
+{
+    display: flex;
+    align-items: center;
+    color: #212121;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#search-div
+{
+    width: 40%;
+    height: 100%;
+    margin-left: 8vw;
+}
+
+#search-bar
+{
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.content
+{
+    margin: 20px 0;
+    width: 100%;
+    transition-duration: 100ms;
+}
+
+.popup
+{
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    overflow-y: hidden;
+    position: fixed;
+    transition-duration: 100ms;
+    visibility: hidden;
+    width: 100%; 
+    z-index: 1;
+}
+
+/*
+.sidebar
+{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 0px 20px 2px #ccc;
+}
+
+.sidebar-button
+{
+    padding: 6px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
+    transition-duration: 100ms;
+}
+
+.sidebar-button:hover
+{
+    box-shadow: 0px 0px 10px #ccc;
+    cursor: pointer;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+#nav-button
+{
+    float: right;
+    align-content: center;
+    margin: 10px 0px 0px 0px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color:#eee;
+    transition-duration: 100ms;
+}
+
+#nav-button:hover
+{
+    background-color:#ccc;
+    cursor: pointer;
+}
+
+#link
+{
+    text-decoration: underline;
+}
+
+#link:hover
+{
+    cursor: pointer;
+}
+*/
